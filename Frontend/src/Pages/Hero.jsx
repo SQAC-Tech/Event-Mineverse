@@ -1,16 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import heading from '../Assets/heading.svg';
-import sqac_icon from '../Assets/sqac_icon.svg';
-import hero_page from '../Assets/Hero_homepage.svg';
-import hero_overlay from '../Assets/hero_overlay.svg';
-import steve from '../Assets/steve.svg';
-import vindicator from '../Assets/vindictator.svg';
-import gameplay_heading from '../Assets/gameplay_heading.svg';
-import zombie_left from '../Assets/zombie_left.svg';
-import zombie_right from '../Assets/zombie_right.svg';
-import gameplay_details from '../Assets/gameplay_details.svg';
-import deadline from '../Assets/deadline.svg';
+import heading from '../assets/heading.svg';
+import sqac_icon from '../assets/sqac_icon.svg';
+import hero_page from '../assets/Hero_homepage.svg';
+import hero_overlay from '../assets/hero_overlay.svg';
+import steve from '../assets/steve.svg';
+import vindicator from '../assets/vindictator.svg';
+import gameplay_heading from '../assets/gameplay_heading.svg';
+import zombie_left from '../assets/zombie_left.svg';
+import zombie_right from '../assets/zombie_right.svg';
+import gameplay_details from '../assets/gameplay_details.svg';
+import deadline from '../assets/deadline.svg';
 
 const Hero = () => {
   return (
