@@ -1,6 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+
+// User's original asset names
 import heading from '../assets/heading.svg';
+
 import sqac_icon from '../assets/sqac_icon.svg';
 import hero_page from '../assets/Hero_homepage.svg';
 import hero_overlay from '../assets/hero_overlay.svg';
@@ -12,56 +15,66 @@ import zombie_left from '../assets/zombie_left.svg';
 import zombie_right from '../assets/zombie_right.svg';
 import gameplay_details from '../assets/gameplay_details.svg';
 
-const HomePage = () => {
+const App = () => {
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="w-full min-h-screen  text-white font-mono overflow-x-hidden">
+      
       {/* Hero Section */}
-      <div className="relative w-full min-h-screen overflow-hidden">
+      <div className="relative w-full min-h-screen bg-transparent overflow-hidden ">
+       
         {/* SQAC Logo */}
-        <div className="absolute top-4 left-4 z-20">
-          <img
+        <div className="absolute top-3 left-3 z-20">
+          <motion.img
             src={sqac_icon}
             alt="SQAC Icon"
-            className="w-28 sm:w-40 md:w-60 h-auto cursor-pointer hover:scale-105 transition-transform"
+            className="w-16 sm:w-20 md:w-28 lg:w-32 h-auto cursor-pointer hover:scale-105 transition-transform"
             onClick={() => window.open('https://sqac-website.vercel.app', "_blank")}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
           />
         </div>
 
         {/* Main content */}
-        <div className="flex flex-col items-center pt-20 px-2 sm:px-4 text-center relative z-10">
+        <div className="flex flex-col items-center pt-16 px-3 sm:px-6 text-center relative z-10">
+          {/* Heading */}
           <motion.img
             src={heading}
             alt="Heading Picture"
-            className="w-64 sm:w-[400px] md:w-[500px] max-w-full mb-4"
+            className="w-52 sm:w-72 md:w-96 lg:w-[500px] max-w-full mb-4"
             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           />
 
+          {/* Hero image & overlay */}
           <div className="relative w-full flex justify-center items-center">
             <motion.img
               src={hero_page}
               alt="Hero Main"
-              className="max-h-[60vh] md:max-h-[70vh] w-auto object-contain"
+              className="max-h-[50vh] sm:max-h-[60vh] md:max-h-[70vh] w-auto object-contain"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8 }}
             />
 
-            <motion.div
-            className='absolute bottom-0 pb-2 left-1/2 transform -translate-x-1/2 
-            max-w-[90%] xs:max-w-[80%] sm:max-w-[70%] md:max-w-[50%] 
-            max-h-[25vh] landscape:max-h-[40%] md:max-h-[50%] 
-            w-full h-auto aspect-video
-            flex items-center justify-center'>
-              
-              <img src={hero_overlay} alt="" />
-            </motion.div>
+            {/* Overlay */}
+           <motion.div
+  className="absolute bottom-10 pb-2 left-1/2 transform -translate-x-1/2 
+             w-[85%] sm:w-[70%] md:w-[50%] max-h-[25vh] h-[100px] flex items-center justify-center
+             bg-[#002b49]/80 border border-[#00bfff] rounded-sm"
+>
+  <p className="text-[#00b14f] text-center text-lg sm:text-xl md:text-2xl font-mono">
+    Enter A World Where Every Thought Is A Block.
+  </p>
+</motion.div>
 
+
+            {/* Characters */}
             <motion.img
               src={steve}
               alt="Steve"
-              className="absolute left-0 bottom-0 w-[50%] sm:w-[40%] md:w-[30%]"
+              className="absolute left-60 bottom-0 w-[40%] sm:w-[30%] md:w-[25%] lg:w-[10%]"
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.8 }}
@@ -70,15 +83,16 @@ const HomePage = () => {
             <motion.img
               src={vindicator}
               alt="Vindicator"
-              className="absolute right-0 bottom-0 w-[25%] sm:w-[20%] md:w-[15%]"
+              className="absolute right-80 bottom-0 w-[20%] sm:w-[18%] md:w-[15%] lg:w-[5%]"
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.8 }}
             />
           </div>
 
+          {/* Deadline */}
           <motion.div
-            className="w-[90%] max-w-[415px] flex justify-end mt-4 pr-2 sm:pr-4"
+            className="w-[80%] sm:w-[60%] md:w-[280px] flex ml-350 mt-4 "
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1, duration: 0.8 }}
@@ -86,19 +100,20 @@ const HomePage = () => {
             <img 
               src={deadline} 
               alt="Deadline" 
-              className="w-full max-w-[415px] h-auto" 
+              className="w-full h-auto" 
             />
           </motion.div>
         </div>
       </div>
 
-      {/* Gameplay Section with enlarged details image */}
-      <div className="pt-4 pb-8 sm:pb-12 flex flex-col items-center px-2 sm:px-4">
-        <div className="flex items-center justify-center gap-1 sm:gap-3 md:gap-4 w-full">
+      {/* Gameplay Section */}
+      <div className="pt-6 pb-12 flex flex-col items-center px-3 sm:px-6 ">
+        {/* Heading with zombies */}
+        <div className="flex items-center justify-center gap-2 sm:gap-4 w-full">
           <motion.img
             src={zombie_left}
             alt="Zombie Left"
-            className="w-[12vw] max-w-[5rem] sm:max-w-[7rem] md:max-w-[10rem]"
+            className="w-10 sm:w-16 md:w-20"
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.8 }}
@@ -107,7 +122,7 @@ const HomePage = () => {
           <motion.img
             src={gameplay_heading}
             alt="Gameplay Heading"
-            className="w-full max-w-[18rem] sm:max-w-[28rem] md:max-w-[40rem] h-auto"
+            className="w-[70%] sm:w-[60%] md:w-[50%] lg:w-[40%] h-auto"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1.4, duration: 0.8 }}
@@ -116,18 +131,18 @@ const HomePage = () => {
           <motion.img
             src={zombie_right}
             alt="Zombie Right"
-            className="w-[12vw] max-w-[5rem] sm:max-w-[7rem] md:max-w-[10rem]"
+            className="w-10 sm:w-16 md:w-20"
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.8 }}
           />
         </div>
         
-        {/* Enlarged gameplay details image */}
+        {/* Gameplay details */}
         <motion.img
           src={gameplay_details}
           alt="Gameplay Details"
-          className="pt-4 sm:pt-6 w-full max-w-[24rem] sm:max-w-[50rem] md:max-w-[72rem] h-auto"
+          className="pt-6 w-full max-w-[22rem] sm:max-w-[40rem] md:max-w-[60rem] lg:max-w-[70rem] h-auto"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.6, duration: 0.8 }}
@@ -137,4 +152,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default App;
