@@ -8,7 +8,7 @@ import sqacIcon from '../assets/icon.png';
 const footer = () => {
   return (
     <div className="flex justify-center items-center  py-10 px-4">
-  <div className="bg-[#4d3828]/70 backdrop-blur-md text-white rounded-md px-8 py-6 w-full max-w-6xl">
+  <div className="bg-[#4d3828]/70 backdrop-blur-md text-white rounded-md px-7 py-6 w-full max-w-7xl">
     
     {/* Contact & FAQ Section side-by-side */}
     <div className="flex flex-col md:flex-row justify-between items-start gap-8 w-full p-6 " >
@@ -17,7 +17,7 @@ const footer = () => {
     </div>
         <div className="flex flex-col md:flex-row justify-between items-start gap-8">
           
-          <div className="flex-1">
+          <div className="flex-1 mr-15 ml-5 ">
             <div className="flex items-center gap-3">
               <img
                 src={sqacIcon}
@@ -38,9 +38,9 @@ const footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="flex-1 text-sm">
+          <div className="flex-1 text-sm ml-9">
             
-            <h3 className="font-['jersey_20'] font-semibold mb-1 text-xl text-transparent bg-gradient-to-r from-orange-400 to-pink-500 bg-clip-text">Contact Info</h3>
+            <h3 className="font-['jersey_20'] font-semibold mb-5 text-2xl text-transparent bg-gradient-to-r from-orange-400 to-pink-500 bg-clip-text">Contact Info </h3>
             <p className=" font-['jersey_20'] text-lg text-gray-200 text-transparent bg-gradient-to-r from-orange-200 to-pink-500 bg-clip-text leading-snug">
               SRM Institute of Science & Technology,
               <br />
