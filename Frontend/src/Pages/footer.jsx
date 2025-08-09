@@ -7,7 +7,7 @@ import sqacIcon from '../assets/icon.png';
 
 const footer = () => {
   return (
-    <div className="flex justify-center items-center bg-[#c4b39e] py-10 px-4">
+    <div className="flex justify-center items-center  py-10 px-4">
   <div className="bg-[#4d3828]/70 backdrop-blur-md text-white rounded-md px-8 py-6 w-full max-w-6xl">
     
     {/* Contact & FAQ Section side-by-side */}
