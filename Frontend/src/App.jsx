@@ -5,6 +5,7 @@ import background2 from './assets/background_dirt.jpg'
 import RulesVH from './Pages/Rules.jsx'
 import background from './assets/java edition.jpg'
 import Footer from './Pages/footer.jsx'
+import TimelineReveal from './Pages/Timeline.jsx'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
 
       {/* Page Content */}
       <HeroVH />
+       <TimelineReveal />
       <RulesVH />
       <Footer />
     </div>
