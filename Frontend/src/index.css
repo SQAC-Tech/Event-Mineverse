@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
 @import "tailwindcss";
+
+
+:root{
+    --font-foot:"Jersey 20", sans-serif;
+}
 
 
   
