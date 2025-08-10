@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 
 // User's original asset names
 import heading from '../assets/heading.svg';
+import register from '../assets/registerbutton.png'
 
 import sqac_icon from '../assets/sqac_icon.svg';
 import hero_page from '../assets/Hero_homepage.svg';
@@ -49,20 +50,29 @@ const App = () => {
 
           {/* Hero image & overlay */}
           <div className="relative w-full flex justify-center items-center">
-            <motion.img
-              src={hero_page}
-              alt="Hero Main"
-              className="max-h-[50vh] sm:max-h-[60vh] md:max-h-[70vh] w-auto object-contain"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8 }}
-            />
+       <motion.img
+  src={hero_page}
+  alt="Hero Main"
+  className="h-[70vh] w-full object-fill"
+  initial={{ opacity: 0, scale: 0.9 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.8 }}
+/>
+<motion.img
+    src={register} // replace with your center image
+    alt="Center Graphic"
+    className="absolute top-1/2 left-1/2 w-[150px] sm:w-[200px] md:w-[250px] 
+               -translate-x-1/2 -translate-y-1/2"
+    initial={{ opacity: 0, scale: 0.8 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ delay: 0.5, duration: 0.6 }}
+  />
 
             {/* Overlay */}
            <motion.div
-  className="absolute bottom-10 pb-2 left-1/2 transform -translate-x-1/2 
+  className="absolute bottom-12 pb-2 left-1/2 transform -translate-x-1/2 
              w-[85%] sm:w-[70%] md:w-[50%] max-h-[25vh] h-[100px] flex items-center justify-center
-             bg-[#002b49]/80 border border-[#00bfff] rounded-sm"
+             bg-[#002b49]/80 border border-[#00bfff]   rounded-4xl"
 >
   <p className="text-[#00b14f] text-center text-lg sm:text-xl md:text-2xl font-mono">
     Enter A World Where Every Thought Is A Block.
@@ -74,7 +84,7 @@ const App = () => {
             <motion.img
               src={steve}
               alt="Steve"
-              className="absolute left-60 bottom-0 w-[40%] sm:w-[30%] md:w-[25%] lg:w-[10%]"
+              className="absolute left-55 bottom-10 w-[40%] sm:w-[30%] md:w-[25%] lg:w-[10%]"
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.8 }}
@@ -83,7 +93,7 @@ const App = () => {
             <motion.img
               src={vindicator}
               alt="Vindicator"
-              className="absolute right-80 bottom-0 w-[20%] sm:w-[18%] md:w-[15%] lg:w-[5%]"
+              className="absolute right-68 bottom-10 w-[20%] sm:w-[18%] md:w-[15%] lg:w-[5%]"
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.8 }}
@@ -91,18 +101,18 @@ const App = () => {
           </div>
 
           {/* Deadline */}
-          <motion.div
-            className="w-[80%] sm:w-[60%] md:w-[280px] flex ml-350 mt-4 "
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1, duration: 0.8 }}
-          >
-            <img 
-              src={deadline} 
-              alt="Deadline" 
-              className="w-full h-auto" 
-            />
-          </motion.div>
+         <motion.div
+  className="w-[80%] sm:w-[60%] md:w-[280px] flex justify-center items-center ml-[1150px] mt-10"
+  initial={{ opacity: 0, x: 50 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ delay: 1, duration: 0.8 }}
+>
+  <div className="w-full py-6 bg-black/30 rounded-full flex justify-center items-center">
+    <span className="text-white font-mono text-lg tracking-wider">DEADLINE</span>
+   
+  </div>
+</motion.div>
+
         </div>
       </div>
 
