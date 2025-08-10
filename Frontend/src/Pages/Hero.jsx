@@ -25,14 +25,8 @@ const App = () => {
           <motion.img
             src={sqac_icon}
             alt="SQAC Icon"
-            className="w-12 sm:w-16 md:w-20 h-auto cursor-pointer border-4 border-green-400 rounded-sm 
-                       shadow-[0_0_10px_#22c55e,0_0_20px_#16a34a] hover:shadow-[0_0_15px_#00ff00,0_0_30px_#00ff00] 
-                       transition-all duration-300"
-            style={{ imageRendering: "pixelated" }}
-            onClick={() => window.open("https://sqac-website.vercel.app", "_blank")}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
+            className="w-12 sm:w-16 md:w-20 h-auto cursor-pointer "
+           
           />
         </div>
 
@@ -157,7 +151,7 @@ const App = () => {
 
         {/* Gameplay details */}
         <motion.div
-          className="pt-6 w-full max-w-[70rem] bg-[#14532d]/70 text-white rounded-2xl text-center p-4 sm:p-6 space-y-4"
+          className="pt-6 w-full max-w-[70rem] bg-[#056029] text-white rounded-2xl text-center p-4 sm:p-6 space-y-4"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.6, duration: 0.8 }}

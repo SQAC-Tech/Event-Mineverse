@@ -12,14 +12,14 @@ const App = () => {
     <div className="relative w-full min-h-screen text-white font-mono overflow-x-hidden overflow-y-hidden  ">
       {/* Background Image */}
       <img
-        src={background}
-        alt="Background"
-        className="absolute top-0 left-0 w-full h-auto min-h-full -z-10 "
-        style={{
-          objectFit: 'contain',   
-          objectPosition: 'top',  
-        }}
-      />
+  src={background}
+  alt="Background"
+  className="absolute top-0 left-0 w-full h-full -z-10 object-cover"
+  style={{
+    objectPosition: 'top',
+  }}
+/>
+
 
       {/* Page Content */}
       <HeroVH />
