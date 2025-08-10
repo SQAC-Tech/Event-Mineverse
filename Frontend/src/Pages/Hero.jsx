@@ -36,7 +36,7 @@ const App = () => {
           <motion.img
             src={heading}
             alt="Heading Picture"
-            className="w-40 sm:w-56 md:w-72 lg:w-[500px] max-w-full mb-4"
+            className="w-65 sm:w-56 md:w-72 lg:w-[500px] max-w-full mb-4 "
             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -59,7 +59,7 @@ const App = () => {
                 src={register}
                 alt="register"
                 className="absolute top-1/2 left-1/2 
-                           w-[120px] sm:w-[160px] md:w-[200px] lg:w-[250px]
+                           w-[160px] sm:w-[160px] md:w-[200px] lg:w-[250px]
                            -translate-x-1/2 -translate-y-1/2 
                            rounded-sm border-4 border-[#3bb143] 
                            shadow-[0_0_20px_#3bb143,0_0_40px_#1d701f]
@@ -103,28 +103,46 @@ const App = () => {
 
           {/* Deadline */}
           <motion.div
-            className="w-full flex justify-center mt-6 sm:mt-5"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1, duration: 0.8 }}
-          >
-            <div className="px-6 sm:px-10 py-3 bg-black/30 rounded-full flex justify-center items-center">
-              <span className="text-white font-mono text-base sm:text-lg tracking-wider">
-                DEADLINE
-              </span>
-            </div>
-          </motion.div>
+  className="w-full flex justify-center mt-8 sm:mt-9"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 1, duration: 0.8 }}
+>
+  <motion.div
+    className="px-6 sm:px-10 py-3 bg-black/30 border-4 border-red-700 rounded-full flex justify-center items-center"
+    animate={{
+      scale: [1, 1.05, 1],
+      boxShadow: [
+        "0 0 0px rgba(255,0,0,0.8)",
+        "0 0 20px rgba(255,0,0,0.9)",
+        "0 0 0px rgba(255,0,0,0.8)"
+      ],
+      rotate: [0, -1, 1, 0] // slight shake
+    }}
+    transition={{
+      duration: 1.2,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }}
+  >
+    <span className="text-white font-mono text-base sm:text-lg tracking-wider text-center">
+      DEADLINE <br />
+      21st August, 2025
+    </span>
+  </motion.div>
+</motion.div>
+
         </div>
       </div>
 
       {/* Gameplay Section */}
-      <div className="pt-[20px] flex flex-col items-center px-3 sm:px-6">
+      <div className="pt-[50px] flex flex-col items-center px-3 sm:px-1">
         {/* Heading with zombies */}
-        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 w-full">
+        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2 w-full">
           <motion.img
             src={zombie_left}
             alt="Zombie Left"
-            className="w-8 sm:w-12 md:w-16"
+            className="w-8 sm:w-12 md:w-16 hidden md:block"
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.8 }}
@@ -133,7 +151,7 @@ const App = () => {
           <motion.img
             src={gameplay_heading}
             alt="Gameplay Heading"
-            className="w-[80%] sm:w-[60%] md:w-[50%] lg:w-[40%] h-auto"
+            className="w-[95%] sm:w-[60%] md:w-[50%] lg:w-[40%] h-auto sm:px-6 mb-10"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1.4, duration: 0.8 }}
@@ -142,7 +160,7 @@ const App = () => {
           <motion.img
             src={zombie_right}
             alt="Zombie Right"
-            className="w-8 sm:w-12 md:w-16"
+            className="w-8 sm:w-12 md:w-16 hidden md:block"
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.8 }}

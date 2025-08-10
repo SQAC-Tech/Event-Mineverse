@@ -18,7 +18,7 @@ export default function TimelineLayout() {
       <img
         src={timeline}
         alt="Timeline"
-        className="w-[70%] max-w-[300px] mb-8 shadow-xl rounded-lg"
+        className="w-[60%] max-w-[300px] mb-8 shadow-xl rounded-lg"
       />
 
       {/* Registration */}
@@ -43,16 +43,16 @@ export default function TimelineLayout() {
       />
 
       {/* Slant Bricks */}
-      <div className="relative w-full max-w-[500px] h-[80px] mx-auto mt-4">
+      <div className="relative w-full max-w-[500px] h-[80px] mx-auto mt-2">
         <img
           src={slantbrick}
           alt="Slant Brick Left"
-          className="absolute left-[10%] top-0 w-[35%] max-w-[208px]"
+          className="absolute left-[10%] top-0 w-[45%] max-w-[208px]"
         />
         <img
           src={slantbrick1}
           alt="Slant Brick Right"
-          className="absolute right-[10%] top-0 w-[35%] max-w-[208px]"
+          className="absolute right-[10%] top-0 w-[45%] max-w-[208px]"
         />
       </div>
 
@@ -66,12 +66,12 @@ export default function TimelineLayout() {
         <img
           src={phase1}
           alt="Phase 1"
-          className="w-[25%] max-w-[224px] -mt-4"
+          className="w-[40%] max-w-[224px] -mt-4"
         />
         <img
           src={phase2}
           alt="Phase 2"
-          className="w-[25%] max-w-[224px] -mt-4"
+          className="w-[40%] max-w-[224px] -mt-4"
         />
         <img
           src={creeperright}
@@ -82,7 +82,7 @@ export default function TimelineLayout() {
 
       {/* Final Section */}
       <div className="relative w-full flex flex-col items-center mt-10 mb-6">
-        <div className="flex justify-center items-center gap-0 mb-1">
+        <div className="flex justify-center items-center gap-0 mb-10">
           <img
             src={slantbrick1}
             alt="Slant Brick Left"

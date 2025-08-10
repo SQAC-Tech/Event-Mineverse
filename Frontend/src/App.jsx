@@ -3,7 +3,7 @@ import HeroVH from './Pages/Hero.jsx'
 import background1 from './assets/background.jpg'
 import background2 from './assets/background_dirt.jpg'
 import RulesVH from './Pages/Rules.jsx'
-import background from './assets/java edition.jpg'
+import background from './assets/de-blurimage.jpg'
 import Footer from './Pages/footer.jsx'
 import TimelineReveal from './Pages/Timeline.jsx'
 
