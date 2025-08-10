@@ -95,8 +95,8 @@ const App = () => {
               transition={{ delay: 0.8, duration: 0.8 }}
             >
               <p className="text-[#b0f1aa] text-sm sm:text-base md:text-lg font-mono">
-                Enter A World Where Every Thought Is A Block. Lorem ipsum dolor,
-                sit amet consectetur adipisicing elit. Accusantium voluptas
+              Enter A World Where Every Thought Is A Block. Build your ideas, craft your journey, and shape your own adventure—one block at a time.
+
               </p>
             </motion.div>
           </div>
