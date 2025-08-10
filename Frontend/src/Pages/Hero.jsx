@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import heading from "../assets/mineverse_heading_main.png";
 import register from "../assets/Group 27.png";
 import sqac_icon from "../assets/SQAC-Logo.png";
-import hero_page from "../assets/mineverse_background_c.png";
+import hero_page from "../assets/mineverse_background-comp.png";
 import hero_overlay from "../assets/hero_overlay.svg";
 import steve from "../assets/steve.svg";
 import vindicator from "../assets/vindictator.svg";
