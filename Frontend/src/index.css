@@ -6,5 +6,6 @@
     --font-foot:"Jersey 20", sans-serif;
 }
 
-
-  
+body{
+    cursor: url('/pickaxe 1.png'), auto;
+}
