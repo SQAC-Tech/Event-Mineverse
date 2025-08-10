@@ -18,7 +18,7 @@ const ContactForm = () => {
           name="name"
           required
           placeholder="Your Name"
-          className="bg-white/10 border border-white p-2 rounded placeholder:text-orange-200 text-white"
+          className="bg-white/10 border border-white p-2 rounded placeholder:text-orange-200 text-white font-['jersey_20']"
         />
 
         
@@ -27,7 +27,7 @@ const ContactForm = () => {
           name="email"
           required
           placeholder="Your Email"
-          className="bg-white/10 border border-white p-2 rounded placeholder:text-orange-200 text-white"
+          className="bg-white/10 border border-white p-2 rounded placeholder:text-orange-200 text-white font-['jersey_20']"
         />
 
        
@@ -36,7 +36,7 @@ const ContactForm = () => {
           required
           placeholder="Your Message"
           rows="4"
-          className="bg-white/10 border border-white p-2 rounded placeholder:text-orange-200 text-white"
+          className="bg-white/10 border border-white p-2 rounded placeholder:text-orange-200 text-white font-['jersey_20']"
         ></textarea>
 
         <button
