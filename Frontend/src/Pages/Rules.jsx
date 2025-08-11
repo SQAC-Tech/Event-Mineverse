@@ -6,9 +6,7 @@ import husk_right from '../assets/husk_right.svg'
 const Rules = () => {
   return (
     <div className="align-center flex flex-col items-center pt-10 mt-[-20px] pb-8 px-4 text-center sm:mt-[-20px]  ">
-  <h1 className="font-mono font-bold mb-2 border-2 p-2 rounded-2xl text-lg sm:text-2xl md:text-3xl lg:text-4xl text-green-400 drop-shadow-[0_0_5px_rgba(0,255,0,0.7)] animate-pulse">
-    Click to Download Rules Manual
-  </h1>
+
 
   <div className="flex items-center justify-center gap-2 sm:gap-4 md:gap-6 lg:gap-8 w-full max-w-[70rem] mt-4">
     {/* Left Husk */}
@@ -39,6 +37,9 @@ const Rules = () => {
       alt=""
     />
   </div>
+    <h1 className="font-mono font-bold mb-2 border-2 p-2 rounded-2xl text-lg sm:text-2xl md:text-3xl lg:text-4xl text-green-400 drop-shadow-[0_0_5px_rgba(0,255,0,0.7)] animate-pulse">
+    Click to Download Rules Manual
+  </h1>
 </div>
 
   )
