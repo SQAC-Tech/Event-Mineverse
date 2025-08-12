@@ -6,6 +6,7 @@ import RulesVH from './Pages/Rules.jsx'
 import background from './assets/de-blurimage.jpg'
 import Footer from './Pages/footer.jsx'
 import TimelineReveal from './Pages/Timeline.jsx'
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
        <TimelineReveal />
       <RulesVH />
       <Footer />
+      <Analytics/>
     </div>
   )
 }
